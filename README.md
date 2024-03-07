@@ -22,19 +22,8 @@ Ensure you have Python installed on your system along with pip for managing Pyth
        git clone https://github.com/itsshuchimehta/TextExtractor.git
        cd TextExtractor
     ```
-2. **Set up a virtual environment (optional, but recommended)**
 
-    * For Unix/macOS:
-    ```sh
-        python3 -m venv venv
-        source venv/bin/activate
-    ```
-    * For Windows:
-    ```sh
-        python -m venv venv
-        .\venv\Scripts\activate
-    ```
-3. **Install dependencies**
+2. **Install dependencies**
     ```sh
         pip install -r requirements.txt
     ```
