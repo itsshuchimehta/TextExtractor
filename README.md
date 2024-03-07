@@ -34,7 +34,7 @@ Ensure you have Python installed on your system along with pip for managing Pyth
     python -m venv venv
     .\venv\Scripts\activate
 ```
-3. ** Install dependencies**
+3. **Install dependencies**
 ```sh
     pip install -r requirements.txt
 ```
