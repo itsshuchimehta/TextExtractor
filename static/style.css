@@ -164,3 +164,15 @@ button[type="submit"]:not(:disabled):hover {
     margin: 10px 0;
 }
 
+#image-preview-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+#image-preview {
+    max-width: 100px; 
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    border-radius: 8px; 
+}

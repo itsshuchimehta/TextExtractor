@@ -9,14 +9,25 @@ document.getElementById("file-upload").addEventListener("change", function () {
   var fileInput = document.getElementById("file-upload");
   var extractButton = document.getElementById("extract-button");
   var fileNameDisplay = document.getElementById("file-name-display");
+  var previewContainer = document.getElementById("image-preview-container");
+  var previewImage = document.getElementById("image-preview");
 
-  if (fileInput.files.length > 0) {
+  if (fileInput.files.length > 0 && fileInput.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      previewImage.src = e.target.result;
+      previewContainer.style.display = "block";
+    };
+    reader.readAsDataURL(fileInput.files[0]);
     extractButton.disabled = false;
     var fileName = fileInput.files[0].name;
+
     fileNameDisplay.textContent = fileName;
   } else {
     extractButton.disabled = true;
     fileNameDisplay.textContent = "";
+    previewContainer.style.display = "none";
+    previewImage.src = "#";
   }
 });
 
@@ -59,10 +70,14 @@ function goBack() {
   var progressBarInner = document.querySelector(".progress-bar-inner");
   var extractButton = document.getElementById("extract-button");
   var fileNameDisplay = document.getElementById("file-name-display");
+  var previewContainer = document.getElementById("image-preview-container");
+  var previewImage = document.getElementById("image-preview");
   resultContainer.style.display = "none";
   progressBarInner.style.width = "0%";
   extractButton.disabled = true;
   fileNameDisplay.textContent = "";
+  previewContainer.style.display = "none";
+  previewImage.src = "#";
 }
 
 function copyToClipboard() {
