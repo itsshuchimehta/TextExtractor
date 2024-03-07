@@ -18,7 +18,7 @@ Ensure you have Python installed on your system along with pip for managing Pyth
 
 1. **Clone the repository**
 
-   ```sh
+```sh
    git clone https://github.com/itsshuchimehta/TextExtractor.git
    cd TextExtractor
 
