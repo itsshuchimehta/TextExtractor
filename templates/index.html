@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextExtractor</title>
+    <link rel="stylesheet" href="static/style.css"> 
+</head>
+<body>
+    <h1>TextExtractor: Image-to-Text Conversion Tool</h1>
+    <p class="description">Turn pictures into words with just a click.</p> 
+    <p class="sub-description">"Making every word in your photos easy to read and copy."</p>
+    <div class="container">
+        <h3>Upload Your Image</h3>
+        <p id="file-name-display"></p>
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Select Image
+            </label>
+            <input id="file-upload" type="file" name="file" accept=".jpg, .jpeg, .png">
+            
+            <button id="extract-button" type="submit" disabled>Extract</button>
+
+        </form>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" id="progress-bar-inner"></div>
+        </div>
+        <div class="result-container" id="result-container">
+            <h2>Extracted Text</h2>
+            <p id="extracted-text"></p>
+            <div class="button-container">
+                <button class="button" onclick="goBack()">Upload Another Image</button>
+                
+                <button id="copyButton" class="button" onclick="copyToClipboard()">Copy Text to Clipboard</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script> 
+</body>
+</html>
