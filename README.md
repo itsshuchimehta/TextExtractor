@@ -32,7 +32,7 @@ The requirements.txt file lists all necessary packages for running TextExtractor
 ### Running the Application
 To launch the Flask server and start using TextExtractor:
 ```sh
-    flask run
+    Python3 app.py 
 ```
 Then, navigate to http://127.0.0.1:5000/ in your web browser to access the tool.
 
