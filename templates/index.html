@@ -12,8 +12,12 @@
     <p class="sub-description">"Making every word in your photos easy to read and copy."</p>
     <div class="container">
         <h3>Upload Your Image</h3>
-        <p id="file-name-display"></p>
         <form id="upload-form" enctype="multipart/form-data">
+            <div id="image-preview-container" style="display: none;">
+                <img id="image-preview" src="#" alt="Image Preview" style="max-width: 100%; height: auto;">
+            </div>
+           
+            <p id="file-name-display"></p>
             <label for="file-upload" class="custom-file-upload">
                 Select Image
             </label>
