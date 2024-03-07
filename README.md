@@ -47,5 +47,3 @@ To launch the Flask server and start using TextExtractor:
 ```
 Then, navigate to http://127.0.0.1:5000/ in your web browser to access the tool.
 
-**Contribution ** 🤝
-Contributions are warmly welcomed! Feel free to fork the repository, implement your changes, and submit a pull request.
