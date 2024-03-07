@@ -18,26 +18,26 @@ Ensure you have Python installed on your system along with pip for managing Pyth
 
 1. **Clone the repository**
 
-```sh
-   git clone https://github.com/itsshuchimehta/TextExtractor.git
-   cd TextExtractor
-```
+    ```sh
+       git clone https://github.com/itsshuchimehta/TextExtractor.git
+       cd TextExtractor
+    ```
 2. **Set up a virtual environment (optional, but recommended)**
 
-* For Unix/macOS:
-```sh
-    python3 -m venv venv
-    source venv/bin/activate
-```
-* For Windows:
-```sh
-    python -m venv venv
-    .\venv\Scripts\activate
-```
+    * For Unix/macOS:
+    ```sh
+        python3 -m venv venv
+        source venv/bin/activate
+    ```
+    * For Windows:
+    ```sh
+        python -m venv venv
+        .\venv\Scripts\activate
+    ```
 3. **Install dependencies**
-```sh
-    pip install -r requirements.txt
-```
+    ```sh
+        pip install -r requirements.txt
+    ```
 The requirements.txt file lists all necessary packages for running TextExtractor, ensuring compatibility and smooth operation. This file includes Flask, TensorFlow, Tesseract-OCR, and others essential for the project.
 
 ### Running the Application
